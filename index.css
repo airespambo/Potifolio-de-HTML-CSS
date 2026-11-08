@@ -17,7 +17,7 @@ body {
     height: auto;
     display: flex;
     flex-direction: column;
-    background-color: #0b081a;
+    background: radial-gradient(ellipse at top right, #0f034d 10%, #0b081a 90%) ;
 }
 
 main {
@@ -39,11 +39,19 @@ header {
     backdrop-filter: blur(30px) brightness(40%);
 }
 
+.menu {
+    display: none;
+}
+
 header > h2 {
     font-size: 1.5rem;
     font-weight: bold;
     color: #4c00ff;
     text-shadow: 0 0 10px #4c00ff;
+}
+
+header > img {
+    display: none;
 }
 
 nav {
@@ -82,7 +90,7 @@ li > a:hover {
     transition-duration: 0.3s;
 }
 
-button {
+.contact-btn, .card > button {
     cursor: pointer;
     border: none;
     background: linear-gradient(45deg, #0f034d, #4c00ff);
@@ -381,78 +389,4 @@ footer h2 {
 
 footer img {
     width: 1.5rem;
-}
-
-@media only screen and (max-width:900px){
-    nav {
-        gap: 0rem;
-    }
-
-    nav > ul {
-        gap: 0rem;
-    }
-    
-    header {
-        padding: 0 1rem;
-    }
-}
-
-@media only screen and (max-width: 800px){
-    nav {
-        gap: 0rem;
-    }
-
-    nav > ul {
-        gap: 0rem;
-    }
-    
-    header {
-        padding: 0 1rem;
-    }
-
-    #home {
-        flex-direction: column;
-        height: auto;
-        gap: 4rem;
-    }
-
-    #home > div {
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 700px){
-
-    header {
-        flex-direction: column;
-        height: auto;
-    }
-
-    nav {
-        flex-direction: column;
-        margin-bottom: 1rem;
-    }
-
-    nav > ul {
-        gap: 0rem;
-        flex-direction: column;
-    }
-
-    nav button {
-        font-size: .8rem;
-    }
-
-    header {
-        padding: 0 1rem;
-    }
-
-    #home {
-        flex-direction: column;
-        height: auto;
-        gap: 4rem;
-    }
-
-    #home > div {
-        width: 100%;
-    }
 }

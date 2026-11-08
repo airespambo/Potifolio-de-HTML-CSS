@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aires Pambo | Portifólio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="src/assets/css/responsive.layout.css">
     <script src="scripts.js"></script>
 </head>
 <body>
     <header>
         <h2>Aires Pambo</h2>
-        <img src="" alt="">
+        <button class="menu"><img src="src/assets/icons/menu.png" alt=""></button>
          <nav>
             <ul>
                 <li><a href="#home">Início</a></li>
                 <li><a href="#about-me">Sobre mim</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="">Projectos</a></li>
+                <li><a href="#projects">Projectos</a></li>
             </ul>
-            <button>Contactos</button>
+            <button class="contact-btn" onclick="location.href='#contacts'">Contactos</button>
         </nav>
         
     </header>
@@ -26,7 +27,7 @@
         <section id="home">
             <div class="perfil">
                 <div class="img">
-                    <img src="src/profile.png" alt="foto de perfil">
+                    <img src="src/assets/imgs/profile.png" alt="foto de perfil">
                 </div>
             </div>
             <div class="description">
@@ -37,8 +38,8 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem at neque quod adipisci quam accusantium maiores saepe sequi autem fugiat possimus culpa provident, eaque cum eius, porro excepturi beatae tenetur!
                     </p>
                     <div class="social">
-                        <a target="_blank" href="https://www.linkedin.com/in/aires-pambo-38572b385"><img src="src/linkedin.png" alt=""></a>
-                        <a target="_blank" href="https://www.github.com/airespambo"><img src="src/github.png" alt=""></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/aires-pambo-38572b385"><img src="src/assets/icons/linkedin.png" alt=""></a>
+                        <a target="_blank" href="https://www.github.com/airespambo"><img src="src/assets/icons/github.png" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -47,14 +48,14 @@
             <h1>Sobre mim</h1>
             <div class="cards">
                 <div class="card">
-                    <img src="src/ipil.jpg" alt="">
+                    <img src="src/assets/imgs/ipil.jpg" alt="">
                     <h3>Estudante do IPIL</h3>
                     <p>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro inventore aliquid ad tenetur, nisi corrupti aspernatur vel sint quidem nulla temporibus facere adipisci optio iure  ea molestiae necessitatibus nesciunt laborum!
                     </p>
                 </div>
                 <div class="card">
-                    <img src="src/programing.webp" alt="">
+                    <img src="src/assets/imgs/programing.webp" alt="">
                     <h3>Auto-didata</h3>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel suscipit facilis repellat exercitationem nihil ducimus nemo laudantium, corporis repellendus harum reiciendis sunt, maiores nisi ratione impedit voluptate minus inventore cumque.
@@ -66,27 +67,27 @@
             <h1>Skills</h1>
             <div>
                 <div class="skill-img">
-                    <img src="src/html.png" alt="html">
+                    <img src="src/assets/icons/html.png" alt="html">
                     <h3>HTML5</h3>
                 </div>
                 <div class="skill-img">
-                    <img src="src/css.png" alt="css">
+                    <img src="src/assets/icons/css.png" alt="css">
                     <h3>CSS3</h3>
                 </div>
                 <div class="skill-img">
-                    <img src="src/js.png" alt="js">
+                    <img src="src/assets/icons/js.png" alt="js">
                     <h3>JavaSript</h3>
                 </div>
                 <div class="skill-img">
-                    <img src="src/python.png" alt="python">
+                    <img src="src/assets/icons/python.png" alt="python">
                     <h3>Python</h3>
                 </div>
                 <div class="skill-img">
-                    <img src="src/python.png" alt="python">
+                    <img src="src/assets/icons/python.png" alt="python">
                     <h3>PyQt5</h3>
                 </div>
                 <div class="skill-img">
-                    <img src="src/python.png" alt="python">
+                    <img src="src/assets/icons/python.png" alt="python">
                     <h3>Tkinter</h3>
                 </div>
             </div>
@@ -103,7 +104,7 @@
                     <button>Ver no GitHub</button>
                 </div>
                 <div class="card">
-                    <img src="src/oper.png" alt="">
+                    <img src="src/assets/imgs/oper.png" alt="">
                     <h3>Operação simples</h3>
                     <div class="tech">
                         <h4>python</h4>
@@ -112,7 +113,7 @@
                     <button>Ver no GitHub</button>
                 </div>
                 <div class="card">
-                    <img src="src/quiz.png" alt="">
+                    <img src="src/assets/imgs/quiz.png" alt="">
                     <h3>Jogo Quiz</h3>
                     <div class="tech">
                         <h4>python</h4>
@@ -121,7 +122,7 @@
                     <button>Ver no GitHub</button>
                 </div>
                 <div class="card">
-                    <img src="src/gallery.png" alt="">
+                    <img src="src/assets/imgs/gallery.png" alt="">
                     <h3>Galeria de Fotos</h3>
                     <div class="tech">
                         <h4>python</h4>
@@ -134,11 +135,11 @@
    </main>
    <footer id="contacts">
         <div>
-            <h2><img src="src/linkedin.png" alt="">LinkedIn</h2>
+            <h2><img src="src/assets/icons/linkedin.png" alt="">LinkedIn</h2>
             <a href="">Ver meu perfil</a>
         </div>
         <div>
-            <h2><img src="src/github.png" alt="">GitHub</h2>
+            <h2><img src="src/assets/icons/github.png" alt="">GitHub</h2>
             <a href="">Ver meu perfil</a>
         </div>
         <div>

@@ -1,0 +1,108 @@
+@media only screen and (max-width:900px){
+    nav {
+        gap: 0rem;
+    }
+
+    nav > ul {
+        gap: 0rem;
+    }
+    
+    header {
+        padding: 0 1rem;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    nav {
+        gap: 0rem;
+    }
+
+    nav > ul {
+        gap: 0rem;
+    }
+    
+    header {
+        padding: 0 1rem;
+    }
+
+    #home {
+        flex-direction: column;
+        height: auto;
+        gap: 4rem;
+    }
+
+    #home > div {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 700px){
+
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: .5rem;
+        transition-duration: 0.3s;
+    }
+
+    nav > ul {
+        gap: .5rem;
+        flex-direction: column;
+    }
+
+    nav button {
+        margin-top: .5rem;
+        font-size: .8rem;
+    }
+
+    header {
+        padding: 0 1rem;
+    }
+
+    header > h2 {
+        align-self: flex-start;
+        margin-top: .5rem;
+    }
+
+    .menu {
+        position: absolute;
+        top: .5rem;
+        right: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        width: 2rem;
+        height: 2rem;
+        border: none;
+    }
+
+    header > .menu > img{
+        display: flex;
+        position: absolute;
+        align-self: flex-end;
+        width: 2rem;
+        height: fit-content;
+    }
+
+    header > img:hover nav {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    #home {
+        flex-direction: column;
+        height: auto;
+        gap: 4rem;
+    }
+
+    #home > div {
+        width: 100%;
+    }
+}
