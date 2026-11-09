@@ -44,35 +44,20 @@
     }
 
     nav {
-        display: flex;
-        flex-direction: column;
-        padding-bottom: .5rem;
-        transition-duration: 0.3s;
-    }
-
-    nav > ul {
-        gap: .5rem;
-        flex-direction: column;
-    }
-
-    nav button {
-        margin-top: .5rem;
-        font-size: .8rem;
+        display: none;
     }
 
     header {
-        padding: 0 1rem;
+        flex-direction: row;
+        padding: .6rem 1rem;
+        align-items: center;
     }
 
     header > h2 {
         align-self: flex-start;
-        margin-top: .5rem;
     }
 
     .menu {
-        position: absolute;
-        top: .5rem;
-        right: 1rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -82,18 +67,58 @@
         border: none;
     }
 
-    header > .menu > img{
+    .menu > img{
         display: flex;
         position: absolute;
         align-self: flex-end;
         width: 2rem;
         height: fit-content;
     }
-
-    header > img:hover nav {
+    .dropdown {
+        margin: 0 auto;
+        width: 10rem;
+        height: auto;
+        border-radius: 0rem 1rem;
         display: flex;
+        padding: 1rem;
+        gap: .5rem;
         flex-direction: column;
-        margin-bottom: 1rem;
+        position: fixed;
+        right: 1rem;
+        top: 4rem;
+        z-index: 1000;
+        transform: translateY(-30rem);
+        transition-duration: 1s;
+    }
+
+    .dropdown a {
+        transition-duration: 0.3s;
+    }
+
+    .dropdown a:hover {
+        border-radius: 2rem;
+        background-color: #cccccc2d;
+        transition-duration: 0.3s;
+    }
+
+    .dropdown::before {
+        content: " ";
+        inset: 0;
+        position: absolute;
+        background-color: #07003025;
+        backdrop-filter: blur(30px) brightness(40%);
+        -webkit-backdrop-filter: blur(30px) brightness(40%);
+        z-index: -1;
+        border-radius: 1rem;
+    }
+
+    .dropdown a {
+        text-decoration: none;
+    }
+
+    .menu:hover .dropdown {
+        transform: translateY(0rem); 
+        transition-duration: 1s;       
     }
 
     #home {
