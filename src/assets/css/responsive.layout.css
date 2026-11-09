@@ -88,7 +88,7 @@
         top: 4rem;
         z-index: 1000;
         transform: translateY(-30rem);
-        transition-duration: 1s;
+        transition-duration: 0.3s;
     }
 
     .dropdown a {
@@ -118,7 +118,7 @@
 
     .menu:hover .dropdown {
         transform: translateY(0rem); 
-        transition-duration: 1s;       
+        transition-duration: 0.3s;       
     }
 
     #home {
