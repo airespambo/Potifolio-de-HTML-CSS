@@ -227,6 +227,24 @@ h3 {
     gap: 4rem;
 }
 
+#about-me p {
+    width: 70%;
+    text-align: justify;
+    font-size: 1rem;
+    font-weight: 100;
+    background-color: #cccccc10;
+    padding: 2rem;
+    border-radius: 1rem;
+    transform: scale(1);
+    transition-duration: 0.3s;
+}
+
+#about-me p:hover {
+    box-shadow: 0 0 10px #4c00ff;
+    transform: scale(1.09);
+    transition-duration: 0.3s;
+}
+
 h1 {
     font-size: 3rem;
     font-weight: bold;
@@ -235,10 +253,10 @@ h1 {
 }
 
 .cards {
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 6rem;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -248,8 +266,8 @@ h1 {
     align-items: flex-start;
     font-weight: 100;
     background-color: #cccccc10;
-    width: 25rem;
-    height: fit-content;
+    width: 40rem;
+    height: 30rem;
     border-radius: 1rem;
     transform: translateY(0rem);
     transition-duration: 0.3s;
@@ -347,11 +365,11 @@ h1 {
 #projects .cards {
     padding: 1rem;
     width: 100%;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 #projects .card {
-    width: 15rem;
+    width: 20rem;
 }
 
 #projects img {
@@ -359,22 +377,36 @@ h1 {
     height: 10rem;
 }
 
+#projects h3 {
+    background-color: transparent;
+    border-radius: 0rem;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 0rem;
+    font-size: 1.2rem;
+}
+
 .tech {
-    margin: 1rem;
+    margin: .5rem 1rem;
     display: flex;
-    gap: 1rem;
+    gap: .5rem;
+}
+
+#projects p {
+    margin-bottom: 2.5rem;
 }
 
 h4 {
     background-color: #4c00ff80;
     color: #fff;
     font-weight: 500;
-    padding: 0 1rem;
+    padding: 0 .5rem;
     border-radius: 2rem;
 }
 
 #projects button {
-    align-self: center;
+    position: absolute;
+    bottom: 0;
     margin-bottom: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;

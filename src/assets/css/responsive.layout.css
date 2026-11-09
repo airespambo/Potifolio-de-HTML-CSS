@@ -140,4 +140,13 @@
     #home > div {
         width: 100%;
     }
+
+    #projects .card {
+        width: 20rem;
+        height: auto;
+    }
+
+    #projects p {
+        margin-bottom: 4rem;
+    }
 }
