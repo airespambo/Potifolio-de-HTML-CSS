@@ -50,7 +50,7 @@ header::before {
 
 }
 
-.dropdown {
+header > button > div {
     display: none;
 }
 

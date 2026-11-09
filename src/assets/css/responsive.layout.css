@@ -74,7 +74,7 @@
         width: 2rem;
         height: fit-content;
     }
-    .dropdown {
+    .dropdown-closed {
         margin: 0 auto;
         width: 10rem;
         height: auto;
@@ -91,17 +91,18 @@
         transition-duration: 0.3s;
     }
 
-    .dropdown a {
+    .dropdown-opened a, .dropdown-closed a {
+        text-decoration: none;
         transition-duration: 0.3s;
     }
 
-    .dropdown a:hover {
+    .dropdown-opened a:hover {
         border-radius: 2rem;
         background-color: #cccccc2d;
         transition-duration: 0.3s;
     }
 
-    .dropdown::before {
+    .dropdown-opened::before {
         content: " ";
         inset: 0;
         position: absolute;
@@ -112,11 +113,20 @@
         border-radius: 1rem;
     }
 
-    .dropdown a {
-        text-decoration: none;
-    }
 
-    .menu:hover .dropdown {
+    .dropdown-opened {
+        margin: 0 auto;
+        width: 10rem;
+        height: auto;
+        border-radius: 0rem 1rem;
+        display: flex;
+        padding: 1rem;
+        gap: .5rem;
+        flex-direction: column;
+        position: fixed;
+        right: 1rem;
+        top: 4rem;
+        z-index: 1000;
         transform: translateY(0rem); 
         transition-duration: 0.3s;       
     }
