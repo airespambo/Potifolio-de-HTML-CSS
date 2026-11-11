@@ -116,7 +116,7 @@ li > a:hover {
     transition-duration: 0.3s;
 }
 
-.contact-btn,.card > button:hover {
+.contact-btn:hover,.card > button:hover {
     transform: scale(1.09);
     transition-duration: 0.3s;
 }
